@@ -3,6 +3,6 @@
 #ifndef matrix_spiral_h
 #define matrix_spiral_h
 
-int *matrixSpiral(int **, int, int);
+int *matrixSpiralApproach1(int **, int, int);
 
 #endif // matrix_spiral_h

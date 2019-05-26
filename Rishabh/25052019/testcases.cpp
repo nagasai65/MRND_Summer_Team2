@@ -3,7 +3,7 @@
 #include "string/string_compress.h"
 #include "linked_list/linkedlist_block_reverse.h"
 #include "matrix/matrix_transpose.h"
-#include "matrix/matrix_spiral.h"
+#include "matrix/matrix_spiral_approach_1.h"
 #include "linked_list/linked_list_number_sum.h"
 #include "sorting/colour_sort_approach_1.h"
 #include "sorting/colour_sort_approach_2.h"
@@ -221,9 +221,9 @@ int areArraysEqual(int *arr1, int *arr2, int size) {
 
 //Helper functions end
 
-void matrixSpiralTestCase1() {
+void matrixSpiralApproach1TestCase1() {
     int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};
-    int m = 3, n = 2, i;
+    int m = 2, n = 3, i;
     int **pass = (int **)malloc(sizeof(int *) * n);
 
     for(i = 0; i < n; ++i) {
@@ -231,7 +231,7 @@ void matrixSpiralTestCase1() {
     }
 
     int expectedOutput[] = {1, 2, 3, 6, 5, 4},
-    *actualOutput = matrixSpiral(pass, m, n);
+    *actualOutput = matrixSpiralApproach1(pass, m, n);
 
     printTestCaseStatus(__func__, areArraysEqual(actualOutput, expectedOutput, m * n));
 }

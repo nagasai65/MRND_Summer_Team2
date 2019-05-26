@@ -19,7 +19,7 @@ void blockReverseTestCase5();
 void matrixTransposeTestCase1();
 void matrixTransposeTestCase2();
 
-void matrixSpiralTestCase1();
+void matrixSpiralApproach1TestCase1();
 
 void linkedListNumberSumTestCase1();
 void linkedListNumberSumTestCase2();

@@ -21,7 +21,7 @@ int main() {
     matrixTransposeTestCase1();
     matrixTransposeTestCase2();
 
-    matrixSpiralTestCase1();
+    matrixSpiralApproach1TestCase1();
 
     linkedListNumberSumTestCase1();
     linkedListNumberSumTestCase2();
