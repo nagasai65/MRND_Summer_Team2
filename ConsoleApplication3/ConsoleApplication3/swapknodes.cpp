@@ -38,13 +38,16 @@ node* reverse(node* head)
 }
 node *foo(int k,node* head)
 {
+	node* dummy = (node*)malloc(sizeof(node));
+	node*tail = dummy;
+	tail->next = head;
 	int flag = 1;
 	node* revstart=head;
 	node *start=head;
 	if (head == NULL)
 		return NULL;
 	for (int i = 1; head!= NULL;i++)
-	{
+	{ 
 		if (i%k==0)
 		{
 			head = head->next;
@@ -52,7 +55,11 @@ node *foo(int k,node* head)
 			while (stop->next != head)
 				stop = stop->next;
 			stop->next = NULL;
+			while (tail->next != revstart)
+				tail = tail->next;
+			tail->next = NULL;
 			revstart = reverse(start);
+			tail->next = revstart;
 			node *connect = revstart;
 			while (connect->next != NULL)
 				connect = connect->next;

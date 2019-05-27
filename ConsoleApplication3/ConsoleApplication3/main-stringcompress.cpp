@@ -83,10 +83,9 @@ int main()
 	createtransposetest();
 	findmerge(createloop());
 	spiral();
-	*/
 	testrandom();
-
-	//testswapknodes();
+	*/
+	testswapknodes();
 	
 	//return 0;
 }

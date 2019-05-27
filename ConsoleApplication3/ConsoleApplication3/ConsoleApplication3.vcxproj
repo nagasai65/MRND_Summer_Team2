@@ -91,6 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="colorsort.cpp" />
+    <ClCompile Include="linkedlistadd.cpp" />
     <ClCompile Include="linkedlistloop.cpp" />
     <ClCompile Include="main-stringcompress.cpp" />
     <ClCompile Include="random..cpp" />
